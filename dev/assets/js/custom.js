@@ -4,9 +4,14 @@ const navigation =  document.querySelector('.header__navigation');
 
 console.log(burger);
 
-function x() {
-    console.log('click');
-    navigation.classList.add('show')
+/*function toggleMenu() {
+    burger.classList.toggle('open');
+    navigation.classList.toggle('show');
+}*/
+
+const toggleMenu = function() {
+    burger.classList.toggle('open');
+    navigation.classList.toggle('show');
 }
 
-burger.addEventListener('click', x)
+burger.addEventListener('click', toggleMenu)

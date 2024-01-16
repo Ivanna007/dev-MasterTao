@@ -44,7 +44,45 @@
 
 .header__navigation {
     display: none;
+    &.show{
+        display: flex;
+    }
 }
+
+.btn-burger {
+    padding: 1.3px 13.5px;
+    border: none;
+    position: relative;
+
+    &:before,
+    &:after {
+        content: "";
+        top: -11px;
+        left: 0;
+        position: absolute;
+        height: 2.5px;
+        width: 27px;
+        background: #fff;
+        transition: .3s;
+    }
+
+    &:after {
+       top: initial;
+       bottom: -11px;
+       left: 0;
+    }
+
+    &.open {
+        background: transparent ;
+        &:before {
+            transform: rotate(-45deg) translate(-6px, 6px);
+        }
+       &:after {
+            transform: rotate(45deg) translate(-10px, -10px);
+        }
+    }
+}
+
 
 
 
