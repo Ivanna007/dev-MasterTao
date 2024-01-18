@@ -3,7 +3,8 @@ $(document).ready(function(){
         //setting-name: setting-value
         arrow: false,
         dots: true,
-        fade: true
+        fade: true,
+        appendArrows: $('.banner-arrows')
     });
    
 });

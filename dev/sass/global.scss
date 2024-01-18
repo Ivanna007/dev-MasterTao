@@ -326,11 +326,36 @@ ul {
     width: 0px;
 }
 
+/*ul.slick-dots {
+    display: flex;
+    justify-content: center;
+}
+ul.slick-dots button {
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    line-height: 0;
+    background: transparent;
+    border-radius: 20px;
+    border: 5px solid greenyellow;
+    margin: 0 8px;
+    transition: .3s;
+}
+#banner li {
+    &:before {
+        display: none;
+    }
+}
+.slick-dots .slick-active button {
+    background-color: yellow;
+    width: 75px;
+}*/
+
 .slick-track {
     display: flex;
 }
 
-/*.slick-arrow {
+.slick-arrow {
     font-size: 0;
     width: 92px;
     height: 92px;
@@ -382,7 +407,7 @@ ul.slick-dots {
         background: transparent;
         outline: none;
     }
-}*/
+}
 
 // .slider-template {
    
