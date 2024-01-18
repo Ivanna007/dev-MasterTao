@@ -94,10 +94,12 @@ ul {
     }
 }
 
+
+
 .container {
     max-width: 1170px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: $container-padding;
+    padding-left: $container-padding;
     margin-right: auto;
     margin-left: auto;
 }
@@ -328,7 +330,7 @@ ul {
     display: flex;
 }
 
-.slick-arrow {
+/*.slick-arrow {
     font-size: 0;
     width: 92px;
     height: 92px;
@@ -380,7 +382,7 @@ ul.slick-dots {
         background: transparent;
         outline: none;
     }
-}
+}*/
 
 // .slider-template {
    

@@ -1,5 +1,10 @@
 
 @media screen and (max-width: 1024px) {
+.container {
+    padding-left: $conteiner-mobile-padding;
+    padding-right: $conteiner-mobile-padding;
+}
+
     .header__navigation {
         position: fixed;
         inset: 90px 0 0;

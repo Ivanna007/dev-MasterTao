@@ -1,3 +1,14 @@
+$(document).ready(function(){
+    $('#banner').slick({
+        //setting-name: setting-value
+        arrow: false,
+        dots: true,
+        fade: true
+    });
+   
+});
+
+
 const burger = document.querySelector('.btn-burger');
 const navigation =  document.querySelector('.header__navigation');
 
@@ -14,4 +25,4 @@ const toggleMenu = function() {
     navigation.classList.toggle('show');
 }
 
-burger.addEventListener('click', toggleMenu)
+burger.addEventListener('click', toggleMenu) 
