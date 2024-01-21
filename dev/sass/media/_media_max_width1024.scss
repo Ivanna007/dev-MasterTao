@@ -1,9 +1,6 @@
 
 @media screen and (max-width: 1024px) {
-.container {
-    padding-left: $conteiner-mobile-padding;
-    padding-right: $conteiner-mobile-padding;
-}
+
 
     .header__navigation {
         position: fixed;
@@ -11,6 +8,8 @@
         flex-direction: column;
         padding: 15px;
         background-color: #363A4D;
+        z-index: 1;
+        
         .btn {
             justify-content: center;
             width: 295px;
@@ -31,17 +30,60 @@
         margin-top: 19px;
        
     }
+
     .header__navigation-item-link {
         font-size: 24px;
         line-height: 222%;
     }
+
     a.header__logo {
         max-width: 126px;
         max-height: 35px;
         margin-top: -6px;
         margin-left: 5px;
     }
-   
+
+    .banner  {
+        padding: 0;
+        .slick-slide {
+            padding: 0 40px;
+            height: calc(100vh - 72px);
+            &:before {
+                content: "";
+                position: absolute;
+                display: block;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: #00000099;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 0;
+                z-index: 1;
+            }
+        }
+        .btn-lg {
+            padding: 19.6px 29px;
+
+        }
+    }
+
+    .banner-title {
+        font-size: 32px;
+        margin-bottom: 10px;
+        max-width: 280px;
+    }
+
+    .banner-subtitle {
+        font-size: 16px;
+        margin-bottom: 18px;
+        max-width: 260px;
+    }
 }
 
 

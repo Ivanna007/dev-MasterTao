@@ -1,15 +1,21 @@
 $(document).ready(function(){
     $('#banner').slick({
         //setting-name: setting-value
-        arrow: false,
+        arrows: false,
         dots: true,
         fade: true,
-        appendArrows: $('.banner-arrows')
+        appendArrows: $('.banner-arrows'),
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                arrows: false,
+              }
+            }
+        ]
+            
     });
    
-});
-
-
 const burger = document.querySelector('.btn-burger');
 const navigation =  document.querySelector('.header__navigation');
 
@@ -27,3 +33,5 @@ const toggleMenu = function() {
 }
 
 burger.addEventListener('click', toggleMenu) 
+});
+
