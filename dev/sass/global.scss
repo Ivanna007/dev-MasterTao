@@ -462,7 +462,7 @@ section {
             height: 100%;
             background-color: $bg-secondary;
          
-            z-index: -1;
+            
         }
     }
 
@@ -480,6 +480,7 @@ section {
     position: relative;
     padding-bottom: 18px;
     margin-bottom: 50px;
+    text-transform: uppercase;
 
     h2 {
         line-height: 124.5%;
@@ -504,11 +505,11 @@ section {
         background-color: $color-secondary;
     }
 
-    
 
-    /*type 3*/
+    /*type 2*/
     &.col-lg-7 {
         margin-bottom: 35px;
+        text-align: left;
         h2 {
             &:after {
                 content: "";
@@ -519,6 +520,11 @@ section {
                 margin: 10px 10px 10px 19px;
                 background-color: $color-secondary;
             }
+        }
+    }
+    &.template-title {
+        &:after {
+            display: none;
         }
     }
 }
