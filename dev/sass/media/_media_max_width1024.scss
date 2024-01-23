@@ -1,46 +1,51 @@
 
 @media screen and (max-width: 1024px) {
 
+    .container {
+        padding-left: $container-mobile-padding;
+        padding-right: $container-mobile-padding;
+    }
 
-    .header__navigation {
+    .header {
+        padding: 17px 0 15px;
+
+        .container {
+            padding-top: 1px;
+            padding-bottom: 3px;
+        }
+        &__logo {
+            max-width: 126px;
+        }
+        &__navigation {
         position: fixed;
-        inset: 90px 0 0;
+        inset: 71px 0 0;
         flex-direction: column;
-        padding: 15px;
-        background-color: #363A4D;
-        z-index: 1;
-        
-        .btn {
-            justify-content: center;
-            width: 295px;
-            height: 68px;
-            padding: 0;
-            margin: 0 auto;
-            display: block;
-            margin-top: -14px;
-           
+        padding: 15px 40px 60px;
+        background-color: $bg-secondary;
+        //z-index: 1;
+        &-list {
+            flex-direction: column;
+            margin: 22px auto;
         }
     }
+    
 
-    .header__navigation-list {
-        flex-direction: column;
-        margin-bottom: 48px;
-        height: 100%;
-        max-height: 309px;
-        margin-top: 19px;
-       
-    }
-
-    .header__navigation-item-link {
-        font-size: 24px;
-        line-height: 222%;
-    }
-
-    a.header__logo {
-        max-width: 126px;
-        max-height: 35px;
-        margin-top: -6px;
-        margin-left: 5px;
+        .btn {
+            width: 100%;
+            max-width: 320px;
+            margin: 0 auto;
+            padding: 22px;
+            justify-content: center;
+           
+        } 
+        &__navigation-item {
+            margin-bottom: 11px;  
+        } 
+        
+        &__navigation-item-link {
+            font-size: 24px;
+            line-height: 222%;
+        }
     }
 
     .banner  {
@@ -65,6 +70,7 @@
                 text-align: center;
                 padding: 0; z-index: 1;
                 
+                
             }
         }
         .btn-lg {
@@ -85,6 +91,8 @@
         max-width: 260px;
     }
 }
+
+
 
 
 
