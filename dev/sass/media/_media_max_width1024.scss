@@ -50,9 +50,11 @@
 
     .banner  {
         padding: 0;
+        
         .slick-slide {
             padding: 0 40px;
             height: calc(100vh - 72px);
+
             &:before {
                 content: "";
                 position: absolute;
@@ -69,6 +71,8 @@
                 align-items: center;
                 text-align: center;
                 padding: 0; z-index: 1;
+                margin-bottom: 50px;
+                
                 
                 
             }
@@ -91,6 +95,7 @@
         max-width: 260px;
     }
 }
+
 
 
 
