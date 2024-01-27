@@ -16,22 +16,41 @@ $(document).ready(function(){
             
     });
    
-const burger = document.querySelector('.btn-burger');
-const navigation =  document.querySelector('.header__navigation');
+    const burger = document.querySelector('.btn-burger');
+    const navigation =  document.querySelector('.header__navigation');
 
 
-console.log(burger);
+    console.log(burger);
 
-/*function toggleMenu() {
+    /*function toggleMenu() {
     burger.classList.toggle('open');
     navigation.classList.toggle('show');
-}*/
+    }*/
 
-const toggleMenu = function() {
-    burger.classList.toggle('open');
-    navigation.classList.toggle('show');
-}
+    const toggleMenu = function() {
+      burger.classList.toggle('open');
+      navigation.classList.toggle('show');
+    }
 
-burger.addEventListener('click', toggleMenu) 
+    burger.addEventListener('click', toggleMenu) 
+
+
+
+
+    const fileInput = document.querySelector('#fileInput');
+    const fileName = document.querySelector('#file-name')
+
+    fileInput.addEventListener('change', function() {
+      //fileName.innerHTML = fileInput.value;  long name
+      fileName.innerHTML = this.files[0].name; //short name
+    })
+
+    const inputColumn = document.querySelector['.input-column'];
+    const inputLabel = document.querySelector('.input-box label');
+    const typeTheckbox = document.querySelector('[type="checkbox"]');
+
+    typeTheckbox.closest('.input-column').classList.add('column-checkbox')
 });
+
+
 
