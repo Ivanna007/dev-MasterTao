@@ -9,7 +9,7 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    
 }
 .input-row {
     display: flex;
@@ -19,11 +19,12 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    
   }
 
     .input-box {
     position: relative;
+    margin-bottom: 19px;
   }
 
     .input-file {
@@ -61,8 +62,8 @@
         }
          
          .column-checkbox {
-              padding-top: 15px;
-              gap: 7px;
+              padding-top: 23px;
+            
          }
          // .input-box label {
          //     margin-bottom: -12px;
